@@ -10,7 +10,7 @@ public interface UserDao {
     int insert(User record);
 
     int insertSelective(User record);
-   // @Select("select * from users where id=#{id}")
+    
     User selectByPrimaryKey(Integer id);
 
     int updateByPrimaryKeySelective(User record);
