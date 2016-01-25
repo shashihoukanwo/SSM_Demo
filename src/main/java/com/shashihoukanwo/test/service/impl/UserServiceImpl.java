@@ -16,5 +16,9 @@ public class UserServiceImpl implements UserService{
 		User user = userDao.selectByPrimaryKey(id);
 		return user;
 	}
+	@Override
+	public void addUser(User user) {
+		userDao.insert(user);
+	}
 
 }
