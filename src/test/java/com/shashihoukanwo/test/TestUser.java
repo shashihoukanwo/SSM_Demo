@@ -18,9 +18,11 @@ public class TestUser {
 	public void testAddUser(){
 		User user = new User();
 		user.setAge(10000);
-		user.setId(3);
-		user.setName("一元帝君");
+		user.setId(8);
+		user.setName("五行帝君");
+		System.out.println(userService);
 		userService.addUser(user);
+		
 	}
 	@Test
 	public void testGetUserById(){

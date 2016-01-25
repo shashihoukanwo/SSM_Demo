@@ -1,7 +1,5 @@
 package com.shashihoukanwo.test.dao;
 
-import org.springframework.stereotype.Repository;
-
 import com.shashihoukanwo.test.entity.User;
 public interface UserDao {
     int deleteByPrimaryKey(Integer id);

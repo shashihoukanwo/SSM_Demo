@@ -2,6 +2,7 @@ package com.shashihoukanwo.test.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.shashihoukanwo.test.dao.UserDao;
 import com.shashihoukanwo.test.entity.User;
@@ -17,8 +18,11 @@ public class UserServiceImpl implements UserService{
 		return user;
 	}
 	@Override
+	@Transactional
 	public void addUser(User user) {
 		userDao.insert(user);
+		//int i = 10 / 0;
+		userDao.insert(new User());
 	}
 
 }
