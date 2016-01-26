@@ -15,7 +15,7 @@ public class UserController {
 	private UserService userService; 
 	@RequestMapping("/getUser")
 	public ModelAndView getUser(@RequestParam("id") int id){
-		ModelAndView mv = new ModelAndView("/user.jsp");
+		ModelAndView mv = new ModelAndView("/test/user");
 		mv.addObject("user", userService.getUserById(id));
 		return mv;
 	}
