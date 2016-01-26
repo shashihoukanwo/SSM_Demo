@@ -12,12 +12,12 @@ import com.shashihoukanwo.test.entity.User;
 import com.shashihoukanwo.test.service.UserService;
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("user/")
 public class UserController {
 	@Autowired
 	private UserService userService; 
 	private Logger logger = LoggerFactory.getLogger(UserController.class);
-	@RequestMapping("/getUser")
+	@RequestMapping("getUser")
 	public ModelAndView getUser(@RequestParam("id") int id){
 		ModelAndView mv = new ModelAndView("test/user");
 		User user = userService.getUserById(id);
