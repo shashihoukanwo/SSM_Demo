@@ -18,5 +18,6 @@
 	</bean>
 	<!-- 可以访问静态资源 -->
 	<mvc:default-servlet-handler/>
-	
+	<!-- 使web注解生效如@RequestMapping -->
+	<mvc:annotation-driven/>
 </beans>
