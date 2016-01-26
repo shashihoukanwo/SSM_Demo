@@ -10,6 +10,7 @@
 		<!-- Spring版本号 -->
 		<spring.version>4.2.4.RELEASE</spring.version>
 		<mybatis.version>3.3.0</mybatis.version>
+		<slfj.version>1.7.12</slfj.version>
 	</properties>
 	<dependencies>
 		<!-- Spring start -->
@@ -106,7 +107,12 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.12</version>
+			<version>${slfj.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slfj.version}</version>
 		</dependency>
 		<!-- log4j 日志框架 -->
 		<dependency>
