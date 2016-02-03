@@ -17,6 +17,12 @@ public class TestUser {
 	@Autowired
 	private UserService userService;
 	Logger logger = LoggerFactory.getLogger(TestUser.class);
+	
+	@Test
+	public void testMapping(){
+		User userById = userService.getUserById(1);
+		System.out.println(userById);
+	}
 	@Test
 	public void testAddUser(){
 		User user = new User();
